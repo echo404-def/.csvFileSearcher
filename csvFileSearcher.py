@@ -8,6 +8,7 @@ Created on Sat Aug 12 12:01:47 2023
 
 import csv
 import re
+import sys
 
 for i in range(3):
     file = rf"{input('.csvFilePath >')}"
@@ -20,6 +21,7 @@ for i in range(3):
         print("\aERROR")
 else:
     print("\aLimit exceeded.")
+    sys.exit()
             
 
 
