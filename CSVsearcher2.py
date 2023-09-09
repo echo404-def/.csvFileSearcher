@@ -13,8 +13,7 @@ import sys
 
 
 class Commands:
-    def __init__(self):
-        self.commands_array = {}
+    commands_array = {}
     
     def command_checker(self,command):
         if command in self.commands_array.keys():
