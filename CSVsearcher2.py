@@ -86,7 +86,7 @@ class Searcher:
     
     
 
-class Main(Searcher,File):
+class Main(Searcher,File,Commands):
     def __init__(self):
         self.get_filepath()
         self.root = tk.Tk()
