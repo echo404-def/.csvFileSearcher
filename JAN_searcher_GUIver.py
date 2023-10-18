@@ -3,7 +3,7 @@
 """
 Created on Wed Oct 18 19:34:46 2023
 
-@author: ahitochigaidesu.
+@author: echo
 """
 
 import requests
