@@ -18,11 +18,12 @@ import os
 class File:
     def get_savefile_path(self):
         if os.name == "nt":
-            dir = "デスクトップ"
+            onedrive_path = os.path.join(os.path.join(os.environ['USERPROFILE']), 'OneDrive')
+            desktop_path = os.path.join(onedrive_path, 'デスクトップ')
+            file = os.path.join(desktop_path, 'JANcode_res.csv')
         else:
-            dir = "Desktop"
-        desktop = os.path.join(os.path.join(os.path.expanduser('~'), dir))
-        file = os.path.join(desktop, "JANcode_res.csv")
+            desktop = os.path.join(os.path.join(os.path.expanduser('~'), 'Desktop'))
+            file = os.path.join(desktop, "JANcode_res.csv")
         return(file)
 
 class GUI:
