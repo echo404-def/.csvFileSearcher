@@ -17,7 +17,11 @@ import os
 
 class File:
     def get_savefile_path(self):
-        desktop = os.path.join(os.path.join(os.path.expanduser('~'), 'Desktop'))
+        if os.name == "nt":
+            dir = "デスクトップ"
+        else:
+            dir = "Desktop"
+        desktop = os.path.join(os.path.join(os.path.expanduser('~'), dir))
         file = os.path.join(desktop, "JANcode_res.csv")
         return(file)
 
